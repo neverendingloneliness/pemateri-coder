@@ -11,31 +11,48 @@
 
     <!-- NAV -->
     <div class="sticky top-0 bg-white">
-        <nav class=" lg:px-32 flex px-4 py-6 justify-between items-center shadow-lg ">
-            <div class="flex gap-1 items-center justify-center">
-                <span class="bg-gradient-to-r text-white font-bold px-5 rounded-full py-1  from-pink-600 to-pink-400">IVAN</span>
-                <p class="font-semibold">Pages</p>
+        <nav class="lg:h-24 lg:px-32 px-4 py-6  shadow-lg overflow-hidden h-20 transition-all duration-300 ease-in-out" name="navbar">
+            <div class="nav-lg flex justify-between items-center">
+
+                <div class="flex gap-1 items-center justify-center">
+                    <span class="bg-gradient-to-r text-white font-bold px-5 rounded-full py-1  from-pink-600 to-pink-400">IVAN</span>
+                    <p class="font-semibold">Pages</p>
+                </div>
+                <ul class="cursor-pointer gap-5 font-bold hidden lg:flex">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                </ul>
+                
+                <a href="http://" class="hidden lg:flex bg-gradient-to-r px-1 rounded-full py-1  from-pink-800 to-pink-400">
+                    <span class="bg-white px-5 font-bold rounded-full py-2">
+                        SignIn   
+                    </span>
+                </a>
+
+                
+                <div class="close-mobile hidden lg:hidden" name="close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 5L5 19m14 0L5 5"/></svg>
+                </div>
+                
+                <button class="flex lg:hidden" name="hamburger"> 
+                    <i class="fa-solid fa-bars w-4"></i>
+                </button>
+
+                
+
             </div>
-            <ul class="cursor-pointer gap-5 font-bold hidden lg:flex">
-                <li>Home</li>
-                <li>About</li>
-                <li>Projects</li>
-            </ul>
 
-            <a href="http://" class="hidden lg:flex bg-gradient-to-r px-1 rounded-full py-1  from-pink-800 to-pink-400">
-                <span class="bg-white px-5 font-bold rounded-full py-2">
-                    SignIn   
-                </span>
-            </a>
-
-            <button class="flex lg:hidden">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+            <div class="menu-mobile flex flex-col mt-10 space-y-6">
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#project">Project</a>
+            </div>
         </nav>
     </div>
 
     <!-- HERO -->
-    <div class="lg:px-32 px-4 mt-10 flex flex-col lg:flex-row justify-center items-center gap-6">
+    <div class="lg:px-32 px-4 mt-10 flex flex-col lg:flex-row justify-center items-center gap-6" >
         <div class="flex flex-col items-center gap-6">
             <h1 class="text-2xl  lg:text-4xl font-bold">HALO SEMUANYA</h1>
             <p class="text-sm md:text-sm lg:text-sm text-slate-500 italic w-full md:w-80 lg:w-80 text-center">" Perkenalkan Saya Ahmad Ivan Sahmura Soni, saya dari prodi Rekayasa Perangkat Lunak, salam kenal semuanya "</p>
@@ -47,10 +64,13 @@
         <div class="hidden lg:flex">
             <img src="../assets/heroo.png" alt="" >
         </div>
+        <div class="" id="about"></div>
     </div>
+    
 
     <!-- About -->
-     <div class="lg:px-32 px-4 mt-15 flex justify-center items-center flex-col md:flex-row-reverse lg:flex-row-reverse gap-10 lg:gap-20">
+     <div class="lg:px-32 px-4 mt-15 flex justify-center items-center flex-col md:flex-row-reverse lg:flex-row-reverse gap-10 lg:gap-20" >
+        
         <div class="flex items-center flex-col gap-7">
             <h1 class="text-2xl lg:text-4xl font-bold">About Me</h1>
             <ul class="flex flex-col text-sm lg:text-lg gap-2 text-slate-500 list-disc ">
@@ -59,6 +79,7 @@
                 <li>Currently addicted with apex legend</li>
                 <li>Pekerja keras asal dibayar </li>
             </ul>
+            <div class="" id="project"></div>
         </div>
 
         <div class="w-52 lg:w-96">
@@ -121,5 +142,33 @@
               </div>
               
         </Footer>
+
+        <script>
+            document.getElementsByName('hamburger')[0].addEventListener('click', function() {
+                const navbar = document.getElementsByName('navbar')[0];
+                const close = document.getElementsByName('close')[0];
+                const bar = document.getElementsByName('hamburger')[0];
+
+                navbar.classList.toggle('h-20'); // Tinggi saat ditutup
+                navbar.classList.toggle('h-60'); // Tinggi saat dibuka
+
+                close.classList.remove('hidden');
+                //close.classList.toggle('block');
+
+                bar.classList.toggle('hidden');
+            });
+
+            document.getElementsByName('close')[0].addEventListener('click', function() {
+                const navbar = document.getElementsByName('navbar')[0];
+                const close = document.getElementsByName('close')[0];
+                const bar = document.getElementsByName('hamburger')[0];
+
+                navbar.classList.toggle('h-20'); // Tinggi saat ditutup
+                navbar.classList.toggle('h-60'); // Tinggi saat dibuka
+
+                close.classList.toggle('hidden');
+                bar.classList.toggle('hidden');
+            });
+        </script>
 </body>
 </html>
