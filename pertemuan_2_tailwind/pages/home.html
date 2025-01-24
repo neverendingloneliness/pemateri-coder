@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivan Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+
+    <!-- NAV -->
+    <div class="sticky top-0 bg-white">
+        <nav class="lg:px-32 flex px-4 py-6 justify-between items-center shadow-lg ">
+            <div class="flex gap-1 items-center justify-center">
+                <span class="bg-gradient-to-r text-white font-bold px-5 rounded-full py-1  from-pink-600 to-pink-400">IVAN</span>
+                <p class="font-semibold">Pages</p>
+            </div>
+            <ul class="cursor-pointer gap-5 font-bold hidden lg:flex">
+                <li>Home</li>
+                <li>About</li>
+                <li>Projects</li>
+            </ul>
+
+            <a href="http://" class="hidden lg:flex bg-gradient-to-r px-1 rounded-full py-1  from-pink-800 to-pink-400">
+                <span class="bg-white px-5 font-bold rounded-full py-2">
+                    SignIn   
+                </span>
+            </a>
+
+            <button class="flex lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </div>
+
+    <!-- HERO -->
+    <div class="lg:px-32 px-4 mt-10 flex flex-col lg:flex-row justify-center items-center gap-6">
+        <div class="flex flex-col items-center gap-6">
+            <h1 class="text-2xl  lg:text-4xl font-bold">HALO SEMUANYA</h1>
+            <p class="text-sm md:text-sm lg:text-sm text-slate-500 italic w-full md:w-80 lg:w-80 text-center">" Perkenalkan Saya Ahmad Ivan Sahmura Soni, saya dari prodi Rekayasa Perangkat Lunak, salam kenal semuanya "</p>
+            <a href="http://" class=" bg-gradient-to-r text-xs  from-pink-600 to-pink-400 py-3 px-3 lg:px-5 rounded-full text-white font-bold">
+                Klik Untuk Mengenal Lebih Lanjut
+            </a>
+        </div>
+
+        <div class="hidden lg:flex">
+            <img src="../assets/heroo.png" alt="" >
+        </div>
+    </div>
+
+    <!-- About -->
+     <div class="lg:px-32 px-4 mt-15 flex justify-center items-center flex-col md:flex-row-reverse lg:flex-row-reverse gap-10 lg:gap-20">
+        <div class="flex items-center flex-col gap-7">
+            <h1 class="text-2xl lg:text-4xl font-bold">About Me</h1>
+            <ul class="flex flex-col text-sm lg:text-lg gap-2 text-slate-500 list-disc ">
+                <li>Lahir pada tanggal 18 Januari 2005</li>
+                <li>Berasal dari kota Tuban</li>
+                <li>Currently addicted with apex legend</li>
+                <li>Pekerja keras asal dibayar </li>
+            </ul>
+        </div>
+
+        <div class="w-52 lg:w-96">
+            <img src="../assets/aboutme.jpeg" alt="" class="border-6 border-pink-500">
+        </div>
+     </div>
+
+     <!-- Projects -->
+      <div class="lg:px-32 px-4 mt-10 ">
+            <div>
+                <h1>Projects</h1>
+                <p>Contoh Projects</p>
+            </div>
+
+            <div>
+                
+            </div>
+      </div>
+
+
+     <!-- Footer -->
+        <Footer class="lg:px-32 px-4 mt-20 bg-white  ">
+              <div class="flex flex-col gap-6">
+                  <ul class="flex justify-center  gap-7 text-2xl">
+                      <a href="" class="bg-gradient-to-r from-pink-600 to-pink-400 px-2 py-2 text-white rounded-full fa-brands fa-linkedin"></a>
+                      <a href="" class="bg-gradient-to-r from-pink-600 to-pink-400 px-2 py-2 text-white rounded-full  fa-brands fa-facebook"></a>
+                      <a href="" class="bg-gradient-to-r from-pink-600 to-pink-400 px-2 py-2 text-white rounded-full  fa-brands fa-github"></a>
+                      <a href="" class="bg-gradient-to-r from-pink-600 to-pink-400 px-2 py-2 text-white rounded-full  fa-brands fa-instagram"></a>
+                  </ul>
+                  <ul class="flex justify-center gap-5 font-bold">
+                      <li>
+                          Home
+                      </li>
+                      <li>
+                          About
+                      </li>
+                      <li>
+                          Projects
+                      </li>
+                  </ul>
+                  <div class="flex justify-center ">
+                      <h1 class="text-sm  text-slate-500">Copyright @2025 Ahmad Ivan</h1>
+                  </div>
+              </div>
+              
+        </Footer>
+</body>
+</html>
