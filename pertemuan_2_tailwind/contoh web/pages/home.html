@@ -20,29 +20,21 @@
                 </div>
                 <ul class="cursor-pointer gap-5 font-bold hidden lg:flex">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#about-lg">About</a></li>
                     <li><a href="#project">Projects</a></li>
                 </ul>
-                
                 <a href="http://" class="hidden lg:flex bg-gradient-to-r px-1 rounded-full py-1  from-pink-800 to-pink-400">
                     <span class="bg-white px-5 font-bold rounded-full py-2">
                         SignIn   
                     </span>
                 </a>
-
-                
                 <div class="close-mobile hidden lg:hidden" name="close">
                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 5L5 19m14 0L5 5"/></svg>
                 </div>
-                
                 <button class="flex lg:hidden" name="hamburger"> 
                     <i class="fa-solid fa-bars w-4"></i>
                 </button>
-
-                
-
             </div>
-
             <div class="menu-mobile flex flex-col mt-10 space-y-6">
                 <a href="#">Home</a>
                 <a href="#about">About</a>
@@ -55,18 +47,22 @@
     <div class="lg:px-32 px-4 mt-10 flex flex-col lg:flex-row justify-center items-center gap-6" >
         <div class="flex flex-col items-center gap-6">
             <h1 class="text-2xl  lg:text-4xl font-bold">HALO SEMUANYA</h1>
+            <div class="" id="about"></div>
             <p class="text-sm md:text-sm lg:text-sm text-slate-500 italic w-full md:w-80 lg:w-80 text-center">" Perkenalkan Saya Ahmad Ivan Sahmura Soni, saya dari prodi Rekayasa Perangkat Lunak, salam kenal semuanya "</p>
             <a href="http://" class=" bg-gradient-to-r text-xs  from-pink-600 to-pink-400 py-3 px-3 lg:px-5 rounded-full text-white font-bold">
                 Klik Untuk Mengenal Lebih Lanjut
             </a>
         </div>
-
+        
         <div class="hidden lg:flex">
             <img src="../assets/heroo.png" alt="" >
         </div>
-        <div class="" id="about"></div>
     </div>
     
+    <div class="" id="about-lg"></div>
+    <br>
+    <br>
+    <br>
 
     <!-- About -->
      <div class="lg:px-32 px-4 mt-15 flex justify-center items-center flex-col md:flex-row-reverse lg:flex-row-reverse gap-10 lg:gap-20" >
@@ -88,13 +84,13 @@
      </div>
 
      <!-- Projects -->
-      <div class="lg:px-32 px-4 mt-20 ">
+      <div class="lg:px-32 px-4 mt-20">
             <div class="flex flex-col justify-center items-center gap-4">
                 <h1 class="text-2xl lg:text-4xl font-bold">Projects</h1>
                 <p class="text-slate-500">Contoh Projects</p>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-20 lg:grid-cols-4 justify-center mt-20 items-center">
+            <div class="grid md:grid-cols-2 gap-20 lg:grid-cols-4 justify-center mt-20 items-center md:pl-22 lg:pl-0">
                 <div class="w-52 h-52 lg:w-80 lg:h-80">
                     <img src="../assets/projects/1.png" alt="" >
                     <h1 class=" text-white font-bold text-center bg-black w-52 lg:w-80">Project 1</h1>
@@ -108,6 +104,7 @@
                     <img src="../assets/projects/3.png" alt="" >
                     <h1 class=" text-white font-bold text-center bg-black w-52 lg:w-80">Project 3</h1>
                 </div>
+
                 <div class="w-52 h-52 lg:w-80 lg:h-80">
                     <img src="../assets/projects/4.jpeg" alt="" >
                     <h1 class=" b text-white font-bold text-center bg-black w-52 lg:w-80">Project 4</h1>
@@ -117,9 +114,9 @@
 
 
      <!-- Footer -->
-        <Footer class="lg:px-32 px-4 mt-20 bg-white  ">
+        <Footer class="lg:px-32 px-4 mt-20 bg-white">
               <div class="flex flex-col gap-6">
-                  <ul class="flex justify-center  gap-7 text-2xl">
+                  <ul class="flex justify-center gap-7 text-2xl">
                       <a href="" class="bg-gradient-to-r from-pink-600 to-pink-400 px-2 py-2 text-white rounded-full fa-brands fa-linkedin"></a>
                       <a href="" class="bg-gradient-to-r from-pink-600 to-pink-400 px-2 py-2 text-white rounded-full  fa-brands fa-facebook"></a>
                       <a href="" class="bg-gradient-to-r from-pink-600 to-pink-400 px-2 py-2 text-white rounded-full  fa-brands fa-github"></a>
@@ -139,8 +136,7 @@
                   <div class="flex justify-center ">
                       <h1 class="text-sm  text-slate-500">Copyright @2025 Ahmad Ivan</h1>
                   </div>
-              </div>
-              
+              </div> 
         </Footer>
 
         <script>
@@ -149,8 +145,8 @@
                 const close = document.getElementsByName('close')[0];
                 const bar = document.getElementsByName('hamburger')[0];
 
-                navbar.classList.toggle('h-20'); // Tinggi saat ditutup
-                navbar.classList.toggle('h-60'); // Tinggi saat dibuka
+                navbar.classList.toggle('h-20');
+                navbar.classList.toggle('h-60');
 
                 close.classList.remove('hidden');
                 bar.classList.toggle('hidden');
@@ -161,8 +157,8 @@
                 const close = document.getElementsByName('close')[0];
                 const bar = document.getElementsByName('hamburger')[0];
 
-                navbar.classList.toggle('h-20'); // Tinggi saat ditutup
-                navbar.classList.toggle('h-60'); // Tinggi saat dibuka
+                navbar.classList.toggle('h-20');
+                navbar.classList.toggle('h-60');
 
                 close.classList.toggle('hidden');
                 bar.classList.remove('hidden');
