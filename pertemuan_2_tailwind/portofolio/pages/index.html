@@ -9,14 +9,14 @@
 </head>
 <body>
     <!-- NAV -->
-    <div class="sticky top-0 z-10">
+    <div class="sticky top-0"> <!--z index-->
         <nav class="flex px-32 py-6 justify-between bg-slate-500 text-white font-bold">
             <div class="flex gap-1">
                 <h1>IVAN</h1>
                 <p>Porto</p>
             </div>
 
-            <ul class="flex gap-5">
+            <ul class="flex gap-5"> <!--hidden-->
                 <li class="hover:scale-110 duration-300 cursor-pointer" >Home</li>
                 <li class="hover:scale-110 duration-300 cursor-pointer" >About</li>
                 <li class="hover:scale-110 duration-300 cursor-pointer" >Projects</li>
@@ -72,7 +72,8 @@
             <p>Contoh Project Yang Telah Dibuat</p>
          </div>
 
-         <div class="grid grid-cols-3 gap-12">
+         <!-- cols rev -->
+         <div class="grid grid-cols-3 gap-12"> 
             <div class="w-52 opacity-40 hover:opacity-100 duration-300 cursor-pointer ">
                 <img src="../assets/projects/1.png" class="rounded-full" alt="">
             </div>
@@ -88,20 +89,19 @@
       <!-- Kotak Saran -->
        <div class="px-32 flex flex-col mt-20 gap-12 justify-center items-center">
           <div class="flex flex-col items-center justify-center">
-            <h1 class="text-5xl font-bold">Kotak Saran</h1>
+            <h1 class="text-5xl font-bold">Kotak Saran</h1> <!--font size rev-->
             <p class="text-slate-400">Berikan Masukkan Anda!</p>
           </div>
 
+          <!-- label rev -->
           <form action="" class="space-y-4">
-               <div class="flex lg:gap-16 lg:items-center lg:flex-row flex-col">    
-                  <label class="font-semibold lg:hidden" for="">Nama</label>
-                  <label class="font-semibold hidden lg:block" for="">Nama : </label>
+               <div class="flex gap-16 items-center">    
+                  <label class="font-semibold" for="">Nama : </label>
                   <input type="text" class="px-6 rounded-xl py-3 border-2 border-slate-700" placeholder="Masukkan nama anda">
                </div>
-               
-               <div class="flex lg:gap-16 lg:items-center lg:flex-row flex-col">    
-                  <label class="font-semibold lg:hidden" for="">Saran</label>
-                  <label class="font-semibold hidden lg:block" for="">Saran : </label>
+        
+               <div class="flex gap-16 items-center">    
+                  <label class="font-semibold" for="">Saran : </label>
                   <input type="text" class="px-6 rounded-xl py-3 border-2 border-slate-700" placeholder="Ketikkan saran anda">
                </div>
           </form>
@@ -117,7 +117,7 @@
                     <i class="fa-brands fa-instagram"></i>
                 </ul>
 
-                <ul class="flex gap-6 font-semibold ">
+                <ul class="flex gap-6 font-semibold">
                     <li class="cursor-pointer" >Home</li>
                     <li class="cursor-pointer" >About</li>
                     <li class="cursor-pointer" >Projects</li>
